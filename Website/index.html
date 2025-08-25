@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JK Refractory</title>
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <meta name="description"
+        content="JK Refractory & Consultancy – dependable refractory solutions and consultancy guided by 35+ years of expertise." />
+    <meta name="description"
+        content="JK Refractory - Leading supplier of fire bricks, insulation bricks, castables, and refractory products for steel, glass, metal and high-heat industries.">
+    <meta name="keywords"
+        content="Refractory, Fire Bricks, Castables, Insulation Bricks, High Alumina Bricks, Refractory Supplier India, JK Refractory">
+    <meta name="author" content="JK Refractory">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        :root {
+            --ink: #e5e7eb;
+            --muted: #C0DCFA;
+            --brand: #f59e0b;
+            --accent: #22d3ee;
+            --max: 1080px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+            line-height: 1.65;
+            color: var(--ink);
+            background-color: #487346;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%234c8e43' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%236aac5f' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%234c8e43' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%236aac5f' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2389CC7C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23768c3a' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2396ac58' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2396ac58' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23768c3a' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23768c3a' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2396ac58' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.65);
+            min-height: 100vh;
+        }
+
+        .wrap {
+            max-width: var(--max);
+            margin: 0 auto;
+            padding: 0 20px
+        }
+
+        header {
+            padding: 120px 0 50px;
+            text-align: center
+        }
+
+        h1 {
+            font-size: 42px;
+            margin: 0 0 14px
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 40px
+        }
+
+        p {
+            margin: 12px 0
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            color: #edf1f1;
+            border: 1px solid rgba(229, 231, 235, .1);
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0
+        }
+
+        ul {
+            margin: 10px 0 0;
+            padding-left: 20px
+        }
+
+        li {
+            margin: 6px 0
+        }
+
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            color: var(--muted)
+        }
+
+        /* Responsive design */
+        @media (max-width:768px) {
+            .card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center
+            }
+
+            .card img {
+                width: 100%;
+                height: auto;
+                max-width: 320px
+            }
+
+            .card-content {
+                text-align: left
+            }
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 40px;
+            background: rgba(56, 92, 56, 0.92);
+            /* dark green tone */
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .nav-logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #fff;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .nav-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .nav-links a {
+            color: var(--ink);
+            text-decoration: none;
+            margin-left: 28px;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: -6px;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent)
+        }
+
+        .nav-links a:hover::after {
+            width: 100%
+        }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--ink);
+            border-radius: 2px
+        }
+
+        @media (max-width:768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                background: rgba(56, 92, 56, 0.95);
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-logo" onclick="location.href='index.html'">
+                <!-- Replace with your logo -->
+                <img src="images/JK Logo.svg" alt="JK Logo">
+            </div>
+            <div class="nav-links"  id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="industries.html">Industries</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="wrap">
+            <header>
+                <h1>About JK Refractory &amp; Consultancy</h1>
+                <p class="muted"><strong>Refractory Solutions for a Tougher Tomorrow</strong></p>
+            </header>
+
+            <section>
+                <h2>Our Story</h2>
+                <p><strong>JK Refractory &amp; Consultancy</strong> was founded with a simple but purpose: to make
+                    refractory supply more reliable, consistent, and transparent for industries in Gujarat and beyond.
+                </p>
+                <p>The name <strong>“JK”</strong> carries deep meaning. Inspired by Lord <em>Jagannath</em> and Lord
+                    <em>Krishna</em> symbols of strength and endurance. Interestingly, it also connects to our founding
+                    partners: <strong>J for Jyoti</strong> and
+                    <strong>K for Kaushik</strong>, representing both legacy and continuity.
+                </p>
+                <div class="card">
+                    <p><strong>Our Mission</strong></p>
+                    <p class="muted">We aim to be a trusted supplier and contributor in the refractory segment—pairing
+                        products with
+                        consultancy and hands-on support. To be the most trusted global partner in refractory solutions,
+                        empowering
+                        industries to operate with greater efficiency, safety, and sustainability by delivering products
+                        that endure the toughest conditions with uncompromising reliability. <br></br>
+                        Our mission is to design, manufacture, and deliver durable refractory products that offer
+                        exceptional performance at competitive pricing. We are committed to providing materials that
+                        withstand extreme heat, minimize maintenance needs, and reduce costly downtime. Guided by
+                        principles of trust, innovation, and long-term partnership, we work hand-in-hand with our
+                        customers to ensure operational continuity, cost savings, and peace of mind in every
+                        application.
+                        <br>Stronger linings. Fewer shutdowns. Better efficiency. That’s how we help build a
+                        tougher tomorrow.</br>
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Our Leadership</h2>
+                <p><strong>Mr. Jyoti Mohanty</strong>, Managing Partner, <strong>35+ years of experience in
+                        refractories.</strong>Throughout his career, he has built a reputation for technical expertise,
+                    leadership, and a customer-first approach. He successfully led the Gujarat operations at <strong>TRL
+                        Krosaki
+                        Refractories Ltd.</strong> one of the most respected names in the sector, where he oversaw
+                    operations, client solutions, and strategic growth. His extensive knowledge of refractory
+                    applications, manufacturing, and performance optimization enables him to deliver practical and
+                    sustainable solutions to clients. As Managing Partner, he combines experience and insight to drive
+                    trust, reliability, and brings deep technical insight to every client engagement.</p>
+                <p><strong>Kaushik Mohanty</strong>, Partner – Strategy &amp; Marketing, represents the new generation.
+                    Recognizing refractories as the silent backbone of heavy industry, he focuses on reliability,
+                    transparency, and long-term partnerships.</p>
+            </section>
+
+            <section>
+                <h2>What We Do</h2>
+                <div class="card">
+                    <strong>Products We Offer</strong>
+                    <ul>
+                        <li>Fireclay bricks</li>
+                        <li>High alumina bricks</li>
+                        <li>Magnesite &amp; basic bricks</li>
+                        <li>Refractory mortars &amp; castables</li>
+                        <li>Ramming masses</li>
+                        <li>Insulating bricks &amp; backup solutions</li>
+                    </ul>
+                    <p class="muted">Note: We also specialize in offering customized products and consultancy support,
+                        ensuring solutions are aligned to each client’s unique needs.</p>
+                </div>
+                <div class="card">
+                    <strong>Industries We Serve</strong>
+                    <ul>
+                        <li><strong>Steel:</strong> High alumina for ladles/EAF, magnesia for converters, castables &
+                            mortars for repairs.</li>
+                        <li><strong>Cement:</strong> High alumina in rotary kilns & cyclones, magnesia in coolers,
+                            insulating for energy saving.</li>
+                        <li><strong>Foundry:</strong> Ramming mass & high alumina castables for induction furnaces.</li>
+                        <li><strong>Ceramics:</strong> Fireclay & high alumina for kilns and tunnel furnaces.</li>
+                        <li><strong>Shipbreaking Ecosystem:</strong> Castables, mortars, and insulating materials for
+                            heat zones.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Connect With Us</h2>
+                <div class="card">
+                    <p>
+                        <strong>JK Refractory &amp; Consultancy</strong><br />
+                        📍Wankaner, Gujarat, India<br />
+                        📱 +91 8469996064 &nbsp;|&nbsp; 📧 jkrefractoriesconsultancy@gmail.com<br />
+                        🆔 GST: 24AQLPM4547M1ZC
+                    </p>
+                </div>
+            </section>
+
+            <footer>
+                © JK Refractory &amp; Consultancy. All rights reserved.
+            </footer>
+        </div>
+    </div>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
