@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Refractory Products | JK Refractory</title>
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <meta name="description"
+        content="JK Refractory manufactures and supplies fireclay bricks, high alumina bricks, refractory castables, mortars and custom shapes for industrial and export applications." />
+
+    <meta name="keywords"
+        content="fireclay bricks, high alumina bricks, refractory castables, refractory mortar, custom refractory shapes" />
+
+    <link rel="canonical" href="https://www.jkrefractory.com/products.html" />
+    <meta name="robots" content="index, follow" />
+
+    <style>
+        :root {
+            --accent: #d34500;
+            --muted: #666;
+            --maxw: 1180px;
+            font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0;
+            background: #fff;
+            color: #111
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none
+        }
+
+        .wrap {
+            max-width: var(--maxw);
+            margin: auto;
+            padding: 20px
+        }
+
+        /* ================= NAVBAR ================= */
+        header {
+            position: sticky;
+            top: 10px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, .85);
+            backdrop-filter: blur(8px);
+            border-radius: 18px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, .06);
+            padding: 10px 14px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+        }
+
+        .brand {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            transition: transform .18s ease;
+        }
+
+        .brand:hover {
+            transform: scale(1.03)
+        }
+
+        .logo {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, .08);
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        nav {
+            display: flex;
+            align-items: center
+        }
+
+        nav a {
+            margin-left: 10px;
+            font-weight: 600;
+            color: #111;
+            position: relative;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -6px;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width .25s ease, left .25s ease;
+        }
+
+        nav a:not(.cta):hover {
+            color: var(--accent)
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            left: 0
+        }
+
+        .cta {
+            background: var(--accent);
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 10px;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 22px;
+            background: none;
+            border: 0;
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: none;
+            margin-top: 10px
+        }
+
+        .mobile-menu.open {
+            display: block
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 12px;
+            font-weight: 600;
+            border-radius: 10px;
+            margin-bottom: 6px;
+            background: #fff;
+            border: 1px solid #eee;
+        }
+
+        .mobile-menu a.cta {
+            background: var(--accent);
+            color: #fff;
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            nav {
+                display: none
+            }
+
+            .hamburger {
+                display: block
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        h1 {
+            font-size: 2.2rem
+        }
+
+        h2 {
+            font-size: 1.6rem
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        .product {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 28px;
+            padding: 28px;
+            margin-top: 30px;
+            border-radius: 18px;
+            border: 1px solid #eee;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .04);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 14px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 900px) {
+            .product {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .catalogue {
+            margin-top: 60px;
+            padding: 40px;
+            border-radius: 20px;
+            background: #fafafa;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        footer {
+            margin: 50px 0 20px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            width: 56px;
+            height: 56px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, .18);
+            z-index: 1600;
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+
+        .whatsapp-float img {
+            width: 26px;
+            height: 26px;
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 34px rgba(0, 0, 0, .22);
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": ["JK Refractory", "JK Refractories", "JK Refractories and Consultancy"],
+  "description": "35+ years expertise in IS6/IS8 fire bricks, high alumina bricks, insulation bricks, refractory castables, mortars, ceramic fiber materials, and custom kiln & furnace solutions. Serving India, Gujarat and exporting globally including the Middle East.",
+  "url": "https://jkrefractory.com/",
+  "logo": "https://jkrefractory.com/images/JK%20Logo.svg",
+  "telephone": "+918799626064",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IN",
+    "addressLocality": "Gujarat",
+    "addressRegion": "Gujarat"
+  },
+        {
+        "@type": "WebSite",
+        "@id": "https://www.jkrefractory.com/#website",
+        "url": "https://www.jkrefractory.com/",
+        "name": "JK Refractory",
+        "publisher": {
+          "@id": "https://www.jkrefractory.com/#company"
+        },
+  "areaServed": [
+    "India",
+    "Gujarat",
+    "Middle East",
+    "UAE",
+    "Qatar",
+    "Oman",
+    "Saudi Arabia",
+    "Global"
+  ],
+  "sameAs": [
+    "YOUR-LINKEDIN-URL",
+    "YOUR-FACEBOOK-URL",
+    "YOUR-INSTAGRAM-URL"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Refractory Product Catalogue",
+    "itemListElement": [
+      {
+        "@type": "Product",
+        "name": "IS6 Fire Bricks"
+      },
+      {
+        "@type": "Product",
+        "name": "IS8 Fire Bricks"
+      },
+      {
+        "@type": "Product",
+        "name": "High Alumina Bricks"
+      },
+      {
+        "@type": "Product",
+        "name": "Insulation Bricks"
+      },
+      {
+        "@type": "Product",
+        "name": "Refractory Castables"
+      },
+      {
+        "@type": "Product",
+        "name": "Refractory Mortar"
+      },
+        {
+        "@type": "Product",
+        "name": "Refractory Grog"
+      },
+        {
+        "@type": "Product",
+        "name": "Magnesite Carbon Bricks"
+      },
+        {
+        "@type": "Product",
+        "name": "MgC Bricks"
+      },
+        {
+        "@type": "Product",
+        "name": "Refractory ASC Bricks"
+      },
+      {
+        "@type": "Product",
+        "name": "Ceramic Fiber Products"
+      },
+      {
+        "@type": "Product",
+        "name": "Custom Refractory Shapes"
+      }
+    ]
+  }
+}
+</script>
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <header>
+            <div class="nav">
+                <a href="index.html" class="brand">
+                    <span class="logo">
+                        <img src="images/JK Logo.svg" alt="JK Refractory Logo">
+                    </span>
+                    <div>
+                        <strong>JK Refractory</strong><br>
+                        <span class="muted" style="font-size:12px">Manufacturer & Exporter</span>
+                    </div>
+                </a>
+
+                <nav>
+                    <a href="products.html">Products</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="exports.html">Exports</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="contact.html" class="cta">Enquiry</a>
+                </nav>
+
+                <button class="hamburger" id="menuBtn">☰</button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="products.html">Products</a>
+                <a href="/gallery.html">Gallery</a>
+                <a href="/exports.html">Exports</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/contact.html" class="cta">Enquiry</a>
+            </div>
+        </header>
+
+        <section>
+            <h1>Refractory Products</h1>
+            <p class="muted">
+                JK Refractory manufactures and supplies a range of refractory bricks, castables,
+                mortars and custom shapes for industrial furnaces, kilns and high-temperature
+                process equipment.
+            </p>
+        </section>
+
+        <section class="product">
+            <img src="Products/JK30.jpg" alt="Fireclay Bricks">
+            <div>
+                <h2>Fireclay Bricks</h2>
+                <p class="muted">
+                    Fireclay bricks are widely used in industrial furnaces and kilns due to their
+                    balanced thermal resistance and mechanical strength. With alumina content
+                    typically ranging from 30–45%, these bricks provide reliable service up to
+                    approximately 1600°C.
+                </p>
+                <p class="muted">
+                    Common applications include cement plants, ceramic kilns, boilers and
+                    incinerators where durability and cost efficiency are important.
+                </p>
+            </div>
+        </section>
+
+        <section class="product">
+            <img src="Products/HA1.jpg" alt="High Alumina Refractory Bricks">
+            <div>
+                <h2>High Alumina Bricks</h2>
+                <p class="muted">
+                    High alumina bricks are designed for applications requiring higher refractoriness,
+                    improved load-bearing capacity, and resistance to aggressive operating conditions.
+                    These bricks are manufactured with alumina content ranging from medium to high grades,
+                    depending on application requirements.
+                </p>
+                <p class="muted">
+                    They are commonly used in critical zones of steel furnaces, cement kilns, reheating
+                    furnaces and other high-temperature industrial equipment where thermal stability and
+                    mechanical strength are essential.
+                </p>
+            </div>
+        </section>
+
+        <section class="product">
+            <img src="Products/Grog.jpeg" alt="Refractory Grog">
+            <div>
+                <h2>Refractory Grog</h2>
+                <p class="muted">
+                    Refractory grog is a crushed and graded refractory material used in the manufacture
+                    of bricks, castables and ramming masses. It improves dimensional stability, reduces
+                    shrinkage, and enhances resistance to thermal shock in refractory products.
+                </p>
+                <p class="muted">
+                    JK Refractory supplies grog in controlled particle sizes suitable for various refractory
+                    formulations and repair applications across multiple industrial sectors.
+                </p>
+            </div>
+        </section>
+
+        <section class="product">
+            <img src="Products/Cust.jpg" alt="Custom Refractory Shapes">
+            <div>
+                <h2>Custom Refractory Shapes</h2>
+                <p class="muted">
+                    Custom refractory shapes are manufactured to meet specific design and operational
+                    requirements of industrial furnaces and kilns. These shapes are produced based on
+                    drawings, dimensions and material specifications provided by the client.
+                </p>
+                <p class="muted">
+                    Custom shapes help optimize lining performance, reduce installation time, and ensure
+                    accurate fitment in complex furnace zones where standard bricks are not suitable.
+                </p>
+            </div>
+        </section>
+
+        <section class="product">
+            <img src="images/6.png" alt="Refractory Mortars">
+            <div>
+                <h2>Refractory Mortars</h2>
+                <p class="muted">
+                    Refractory mortars are used for bonding refractory bricks and shapes, ensuring joint
+                    integrity and structural stability of furnace linings. These mortars are formulated
+                    to match the thermal and chemical properties of the associated refractory products.
+                </p>
+                <p class="muted">
+                    JK Refractory supplies mortars suitable for various temperature ranges and applications,
+                    supporting reliable installation and long-term lining performance.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="catalogue">
+            <h2>Product Catalogue</h2>
+            <p class="muted">
+                Download our catalogue for detailed grades, specifications and commonly
+                supplied refractory products.
+            </p>
+            <a href="images/JK Catalogue.pdf" class="cta">Download Catalogue</a>
+        </section>
+
+        <footer>
+            © JK Refractory & Consultancy · Refractory Solutions for a tougher tomorrow
+        </footer>
+
+    </div>
+    <!-- WhatsApp Floating CTA -->
+    <a href="https://wa.me/918469996064?text=Hello%20JK%20Refractory,%20I%20would%20like%20to%20discuss%20a%20refractory%20requirement."
+        class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with JK Refractory on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script>
+        const btn = document.getElementById("menuBtn");
+        const menu = document.getElementById("mobileMenu");
+        btn.addEventListener("click", () => menu.classList.toggle("open"));
+    </script>
+
+</body>
+
+</html>

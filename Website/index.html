@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>JK Refractory | Manufacturer & Exporter of Refractory Bricks, Castables & Custom Shapes</title>
+
+    <meta name="description"
+        content="JK Refractory is an Indian manufacturer and exporter of high alumina refractory bricks, castables, mortars and custom shapes. 35+ years industry experience. Export-ready supply with PAN India presence." />
+
+    <meta name="keywords"
+        content="refractory manufacturer india, refractory exporter india, high alumina bricks, refractory castables, custom refractory shapes, export refractory supplier" />
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link rel="canonical" href="https://www.jkrefractory.com/" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="JK Refractory | Manufacturer & Exporter of Refractory Products" />
+    <meta property="og:description"
+        content="Manufacturer and exporter of refractory bricks, castables and custom shapes from India. Trusted for export-ready quality and reliable supply." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.jkrefractory.com/" />
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "JK Refractory & Consultancy",
+      "url": "https://www.jkrefractory.com/",
+      "logo": "https://www.jkrefractory.com/images/JK%20Logo.svg",
+      "description": "Indian manufacturer and exporter of refractory bricks, castables, mortars and custom shapes with over 35 years of industry experience.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --accent: #d34500;
+            --muted: #666;
+            --maxw: 1180px;
+            font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0;
+            color: #111;
+            background: #fff
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none
+        }
+
+        .wrap {
+            max-width: var(--maxw);
+            margin: auto;
+            padding: 20px
+        }
+
+        /* ================= NAVBAR ================= */
+        header {
+            position: sticky;
+            top: 10px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, .85);
+            backdrop-filter: blur(8px);
+            border-radius: 18px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, .06);
+            padding: 10px 14px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+        }
+
+        .brand {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            transition: transform .18s ease;
+        }
+
+        .brand:hover {
+            transform: scale(1.03)
+        }
+
+        .logo {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, .08)
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            margin-left: 10px;
+            font-weight: 600;
+            color: #111;
+            position: relative;
+            transition: color .2s ease;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -6px;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width .25s ease, left .25s ease;
+        }
+
+        nav a:not(.cta):hover {
+            color: var(--accent)
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .cta {
+            background: var(--accent);
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 10px;
+            transition: transform .18s ease, box-shadow .18s ease;
+        }
+
+        .cta:hover {
+            color: #fff;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, .12);
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 22px;
+            background: none;
+            border: 0;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        .mobile-menu {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .mobile-menu.open {
+            display: block
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 12px;
+            font-weight: 600;
+            border-radius: 10px;
+            margin-bottom: 6px;
+            background: #fff;
+            border: 1px solid #eee;
+        }
+
+        /* FIX: CTA inside mobile menu */
+        .mobile-menu a.cta {
+            background: var(--accent);
+            color: #fff;
+            text-align: center;
+            border: none;
+        }
+
+        /* Keep CTA hover consistent on mobile */
+        .mobile-menu a.cta:hover {
+            background: var(--accent);
+            color: #fff;
+            transform: none;
+            box-shadow: none;
+        }
+
+
+        /* ================= HERO ================= */
+        .hero {
+            margin-top: 20px;
+            border-radius: 18px;
+            overflow: hidden;
+            background: #111;
+            color: #fff;
+            position: relative;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 65vh;
+            object-fit: cover;
+            opacity: .45
+        }
+
+        .hero-content {
+            position: absolute;
+            bottom: 12%;
+            left: 6%;
+            max-width: 720px
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            margin: 12px 0;
+            line-height: 1.1
+        }
+
+        .hero p {
+            opacity: .95
+        }
+
+        /* ================= CONTENT ================= */
+        section {
+            margin-top: 40px
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 10px
+        }
+
+        h3 {
+            margin-bottom: 6px
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        .grid {
+            display: grid;
+            gap: 18px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+        }
+
+        .card {
+            border: 1px solid #eee;
+            border-radius: 14px;
+            padding: 18px;
+            background: #fff;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, .03)
+        }
+
+        footer {
+            margin: 50px 0 20px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            width: 56px;
+            height: 56px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, .18);
+            z-index: 1600;
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+
+        .whatsapp-float img {
+            width: 26px;
+            height: 26px;
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 34px rgba(0, 0, 0, .22);
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 900px) {
+            nav {
+                display: none
+            }
+
+            .hamburger {
+                display: block
+            }
+
+            .hero img {
+                height: 52vh
+            }
+
+            .hero-content {
+                left: 5%;
+                right: 5%
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": ["JK Refractory", "JK Refractories", "JK Refractories and Consultancy"],
+  "description": "35+ years expertise in IS6/IS8 fire bricks, high alumina bricks, insulation bricks, refractory castables, mortars, ceramic fiber materials, and custom kiln & furnace solutions. Serving India, Gujarat and exporting globally including the Middle East.",
+  "url": "https://jkrefractory.com/",
+  "logo": "https://jkrefractory.com/images/JK%20Logo.svg",
+  "telephone": "+918799626064",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IN",
+    "addressLocality": "Gujarat",
+    "addressRegion": "Gujarat"
+  },
+        {
+        "@type": "WebSite",
+        "@id": "https://www.jkrefractory.com/#website",
+        "url": "https://www.jkrefractory.com/",
+        "name": "JK Refractory",
+        "publisher": {
+          "@id": "https://www.jkrefractory.com/#company"
+        },
+  "areaServed": [
+    "India",
+    "Gujarat",
+    "Middle East",
+    "UAE",
+    "Qatar",
+    "Oman",
+    "Saudi Arabia",
+    "Global"
+  ],
+  "sameAs": [
+    "YOUR-LINKEDIN-URL",
+    "YOUR-FACEBOOK-URL",
+    "YOUR-INSTAGRAM-URL"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Refractory Product Catalogue",
+    "itemListElement": [
+      {
+        "@type": "Product",
+        "name": "IS6 Fire Bricks"
+      },
+      {
+        "@type": "Product",
+        "name": "IS8 Fire Bricks"
+      },
+      {
+        "@type": "Product",
+        "name": "High Alumina Bricks"
+      },
+      {
+        "@type": "Product",
+        "name": "Insulation Bricks"
+      },
+      {
+        "@type": "Product",
+        "name": "Refractory Castables"
+      },
+      {
+        "@type": "Product",
+        "name": "Refractory Mortar"
+      },
+        {
+        "@type": "Product",
+        "name": "Refractory Grog"
+      },
+        {
+        "@type": "Product",
+        "name": "Magnesite Carbon Bricks"
+      },
+        {
+        "@type": "Product",
+        "name": "MgC Bricks"
+      },
+        {
+        "@type": "Product",
+        "name": "Refractory ASC Bricks"
+      },
+      {
+        "@type": "Product",
+        "name": "Ceramic Fiber Products"
+      },
+      {
+        "@type": "Product",
+        "name": "Custom Refractory Shapes"
+      }
+    ]
+  }
+}
+</script>
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <header>
+            <div class="nav">
+                <a href="#top" class="brand">
+                    <span class="logo">
+                        <img src="images/JK Logo.svg" alt="JK Refractory Logo">
+                    </span>
+                    <div>
+                        <strong>JK Refractory</strong><br>
+                        <span class="muted" style="font-size:12px">Manufacturer & Exporter</span>
+                    </div>
+                </a>
+
+                <nav>
+                    <a href="products.html">Products</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="exports.html">Exports</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="contact.html" class="cta">Enquiry</a>
+                </nav>
+
+                <button class="hamburger" id="menuBtn" aria-label="Open menu">☰</button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="/products.html">Products</a>
+                <a href="/industries.html">Industries</a>
+                <a href="/gallery.html">Gallery</a>
+                <a href="/exports.html">Exports</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/contact.html" class="cta">Enquiry</a>
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero" id="top">
+            <img src="Products/Carousel.png" alt="Refractory manufacturing and export supply">
+            <div class="hero-content">
+                <span style="background:var(--accent);padding:6px 10px;border-radius:8px;font-weight:700">
+                    Export-Ready Manufacturer
+                </span>
+                <h1>Refractory Manufacturer & Exporter from India</h1>
+                <p>
+                    JK Refractory manufactures and supplies high alumina bricks, refractory castables,
+                    mortars and custom shapes for industrial applications. With over 35 years of
+                    industry experience, we support overseas trading companies and end users with
+                    consistent quality, technical understanding and export-ready supply.
+                </p>
+            </div>
+        </section>
+
+        <!-- INTRO -->
+        <section>
+            <h2>Engineering-Driven Refractory Solutions</h2>
+            <p class="muted">
+                Our operations are based in India, with refractory supplies executed across the North,
+                South, East and West zones. This nationwide operational exposure enables us to support
+                export requirements with stable manufacturing, disciplined quality control and secure
+                packing for international shipments.
+            </p>
+        </section>
+
+        <!-- CAPABILITIES -->
+        <section>
+            <div class="grid">
+                <div class="card">
+                    <h3>Manufacturing Capability</h3>
+                    <p class="muted">
+                        Production of high alumina refractory bricks, dense and insulating castables,
+                        mortars and grogs. Custom shapes manufactured as per drawings and specifications.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Quality & Consistency</h3>
+                    <p class="muted">
+                        Controlled raw material selection, batch consistency and inspection practices
+                        suitable for both domestic and export supply requirements.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Export Support</h3>
+                    <p class="muted">
+                        Experience with export documentation, palletized and container-safe packing,
+                        and coordination for FOB, CIF and EXW shipments.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INDUSTRIES -->
+        <section>
+            <h2>Industries We Serve</h2>
+            <ul class="muted">
+                <li>Steel & Foundry – furnaces, ladles, reheating zones</li>
+                <li>Cement & Lime – kiln and calciner linings</li>
+                <li>Ceramics & Tiles – kilns and high-temperature zones</li>
+                <li>Heat Treatment & Process Industries</li>
+            </ul>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section>
+            <h2>Core Refractory Products</h2>
+            <div class="grid">
+                <div class="card">
+                    <strong>High Alumina Bricks</strong>
+                    <p class="muted">Grades ranging from medium to high alumina for demanding thermal applications.</p>
+                </div>
+                <div class="card">
+                    <strong>Refractory Castables</strong>
+                    <p class="muted">Dense, insulating and application-specific castables for different zones.</p>
+                </div>
+                <div class="card">
+                    <strong>Mortars & Custom Shapes</strong>
+                    <p class="muted">Joint mortars, grogs and engineered shapes manufactured to drawings.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section>
+            <h2>Business Enquiries</h2>
+            <p class="muted">
+                For export enquiries, trading partnerships or technical discussions,
+                please connect with our team.
+            </p>
+            <a href="/contact.html" class="cta">Send Enquiry</a>
+        </section>
+
+        <footer>
+            © JK Refractory & Consultancy · Refractory Solutions for a tougher tomorrow
+        </footer>
+
+    </div>
+
+    <script>
+        const btn = document.getElementById("menuBtn");
+        const menu = document.getElementById("mobileMenu");
+        btn.addEventListener("click", () => menu.classList.toggle("open"));
+    </script>
+    <!-- WhatsApp Floating CTA -->
+    <a href="https://wa.me/918469996064?text=Hello%20JK%20Refractory,%20I%20would%20like%20to%20discuss%20a%20refractory%20requirement."
+        class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with JK Refractory on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+</body>
+
+</html>
